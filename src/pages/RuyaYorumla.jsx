@@ -11,13 +11,16 @@ const RuyaYorumla = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3000/api/interpret-dream", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ input }),
-      });
+      const res = await fetch(
+        "https://server-latest2.onrender.com/api/interpret-dream",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ input }),
+        }
+      );
 
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
