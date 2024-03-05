@@ -100,7 +100,7 @@ const TextToImage = () => {
              md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E80]/80 pointer-events-none "
               >
                 <span className="btn-loader"></span>
-                <span>Yorumlanıyor</span>
+                <span>Oluşturuluyor</span>
               </motion.button>
             ) : (
               <motion.button
