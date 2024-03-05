@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
-    <div ref={ref1} className="bottom-0 w-full">
+    <div ref={ref1} className="bottom-0 w-full mt-24 md:mt-56">
       <motion.footer
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 50 }}
