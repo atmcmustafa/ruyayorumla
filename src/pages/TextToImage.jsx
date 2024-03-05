@@ -90,15 +90,29 @@ const TextToImage = () => {
               rows="10"
               className="w-full bg-slate-900 outline-none p-4 rounded resize-none"
             ></textarea>
-            <motion.button
-              variants={item}
-              transition={{ delay: 0.5 }}
-              type="submit"
-              className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex items-center justify-center mt-6"
-            >
-              Resmi Oluştur
-            </motion.button>
+            {loading ? (
+              <motion.button
+                disabled
+                variants={item}
+                transition={{ delay: 0.5 }}
+                type="submit"
+                className="h-10 w-full
+             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E80]/80 pointer-events-none "
+              >
+                <span className="btn-loader"></span>
+                <span>Yorumlanıyor</span>
+              </motion.button>
+            ) : (
+              <motion.button
+                variants={item}
+                transition={{ delay: 0.5 }}
+                type="submit"
+                className="h-10 w-full
+             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex items-center justify-center mt-6 "
+              >
+                Gönder
+              </motion.button>
+            )}
           </motion.form>
           {loading ? (
             <div className="w-full mx-auto flex items-center justify-center mt-8">
@@ -113,6 +127,7 @@ const TextToImage = () => {
               <h2 className="text-2xl  my-6">
                 Gördüğün rüya buna mı benziyor?
               </h2>
+
               <img
                 className="w-full  h-full"
                 src={imageUrl}
