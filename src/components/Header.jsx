@@ -45,13 +45,13 @@ const Header = () => {
       {toggle && (
         <div
           onClick={() => setToggle(false)}
-          className="min-h-screen min-w-screen duration-300 bg-black/50 absolute z-10 inset-0"
+          className=" min-h-screen max-h-screen min-w-screen duration-300 bg-black/50 fixed z-10 inset-0"
         ></div>
       )}
       {/* backdrop */}
 
       <div
-        className={`w-64 min-h-screen bg-black fixed opacity-100 duration-300 top-0 z-20 flex flex-col justify-between  overflow-hidden  h-full
+        className={`w-64 min-h-dvh bg-black fixed opacity-100 duration-300 top-0 z-20 flex flex-col justify-between  overflow-hidden  h-full
          ${toggle ? " left-0 " : " -left-[999px] "}`}
       >
         <nav className="flex flex-col items-center gap-8  mt-24 ">
