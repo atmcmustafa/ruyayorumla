@@ -12,7 +12,7 @@ const RuyaYorumla = () => {
 
     try {
       const res = await fetch(
-        "https://server-yorumlama.vercel.app/api/interpret-dream",
+        "https://server-latest2.onrender.com/api/interpret-dream",
         {
           method: "POST",
           headers: {
