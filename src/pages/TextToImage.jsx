@@ -10,7 +10,7 @@ const TextToImage = () => {
     e.preventDefault();
     setLoading(true);
     const response = await fetch(
-      "https://server-yorumlama.vercel.app/api/interpret-dream",
+      "https://server-imagegeneration.onrender.com/api/generate-image",
       {
         method: "POST",
         headers: {
