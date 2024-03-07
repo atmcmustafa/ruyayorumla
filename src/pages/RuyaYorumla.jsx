@@ -5,11 +5,12 @@ const RuyaYorumla = () => {
   const [input, setInput] = useState("");
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+    setErrorMessage("");
     try {
       const res = await fetch(
         "https://server-latest2.onrender.com/api/interpret-dream",
@@ -31,6 +32,10 @@ const RuyaYorumla = () => {
       setResponse(data.response);
     } catch (error) {
       console.error("Yanıt alınırken bir hata oluştu:", error);
+      setErrorMessage(
+        "Rüya yorumlanırken bir hata oluştu. Lütfen tekrar deneyin.",
+        error
+      );
     } finally {
       setLoading(false);
     }
@@ -140,6 +145,12 @@ const RuyaYorumla = () => {
               </h2>
               <div className="bg-slate-900 p-4 mt-2 rounded">{response}</div>
             </>
+          )}
+
+          {errorMessage && (
+            <div className="text-red-500 bg-white rounded p-4 font-bold mt-4">
+              {errorMessage}
+            </div>
           )}
         </motion.div>
       </div>

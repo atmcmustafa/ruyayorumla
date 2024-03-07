@@ -16,7 +16,7 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://twitter.com/mstfatmcc"
-              className="mr-9 text-neutral-800 dark:text-neutral-200"
+              className="mr-9 text-neutral-800 dark:text-neutral-200 hover:bg-black hover:text-blue-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.instagram.com/mstfatmcc/"
-              className="mr-9 text-neutral-800 dark:text-neutral-200"
+              className="mr-9 text-neutral-800 dark:text-neutral-200 instagram-gradient rounded"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/mustafa-atmaca-1787b0284/"
-              className="mr-9 text-neutral-800 dark:text-neutral-200"
+              className="mr-9 text-neutral-800 dark:text-neutral-200 hover:bg-black hover:text-blue-500 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://github.com/atmcmustafa"
-              className="text-neutral-800 dark:text-neutral-200"
+              className="text-neutral-800 dark:text-neutral-200 hover:bg-white hover:text-black rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,17 +72,20 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-full p-4 text-center text-neutral-700 text-neutral-800 dark:text-neutral-400">
-          <a className="text-neutral-800 dark:text-neutral-400 ml-2" href="">
-            <Link to={"/sozlesme"}> Gizlilik Sözleşmesi</Link>
-          </a>
+        <div className="w-full p-4 text-center text-neutral-800 dark:text-neutral-400">
+          <Link
+            className="text-neutral-800 dark:text-neutral-400 ml-2 hover:text-white duration-300"
+            to={"/sozlesme"}
+          >
+            Gizlilik Sözleşmesi
+          </Link>
         </div>
-        <div className="w-full p-4 text-center text-neutral-700 text-neutral-800 dark:text-neutral-400">
+        <div className="w-full p-4 text-center text-neutral-800  dark:text-neutral-400">
           © 2024
           <a
             target="_blank"
             href="https://atmcmustafa.vercel.app/"
-            className="text-neutral-800 dark:text-neutral-400 ml-2"
+            className="text-neutral-800 dark:text-neutral-400 ml-2 hover:text-white duration-300"
           >
             Mustafa Atmaca
           </a>

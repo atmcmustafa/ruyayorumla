@@ -5,24 +5,38 @@ const TextToImage = () => {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const response = await fetch(
-      "https://server-imagegeneration.onrender.com/api/generate-image",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt }),
-      }
-    );
+    setErrorMessage("");
+    try {
+      const response = await fetch(
+        "https://server-imagegeneration.onrender.com/api/generate-image",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt }),
+        }
+      );
 
-    const data = await response.json();
-    setImageUrl(data.imageUrl);
-    setLoading(false);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      setImageUrl(data.imageUrl);
+    } catch (error) {
+      console.error("Yanıt alınırken bir hata oluştu:", error);
+      setErrorMessage(
+        "Resim oluşturulurken bir hata oluştu. Lütfen tekrar deneyin."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   // framer motion
@@ -134,6 +148,11 @@ const TextToImage = () => {
                 alt="Oluşturulan Resim"
               />
             </>
+          )}
+          {errorMessage && (
+            <div className="text-red-500 bg-white rounded p-4 font-bold mt-4">
+              {errorMessage}
+            </div>
           )}
         </motion.div>
       </div>
