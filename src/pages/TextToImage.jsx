@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { FaInfoCircle } from "react-icons/fa";
 const TextToImage = () => {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -89,6 +90,14 @@ const TextToImage = () => {
           >
             Gördüğün rüyayı hatırladığın kadarıyla anlat, resimleyelim.
           </motion.p>
+          <motion.p
+            variants={item}
+            transition={{ delay: 0.35 }}
+            className=" mb-2 flex items-center gap-2 bg-yellow-500 text-sm text-black w-fit p-1 rounded "
+          >
+            <FaInfoCircle />
+            Kullanılan servisten dolayı cevap süreleri uzun sürebilmektedir.
+          </motion.p>
           <motion.form
             variants={item}
             transition={{ delay: 0.4 }}
@@ -128,13 +137,6 @@ const TextToImage = () => {
               </motion.button>
             )}
           </motion.form>
-          {loading ? (
-            <div className="w-full mx-auto flex items-center justify-center mt-8">
-              <div className="loader"></div>
-            </div>
-          ) : (
-            ""
-          )}
 
           {imageUrl && (
             <>
