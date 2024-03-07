@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.1 });
   return (
-    <div ref={ref1} className="bottom-0 w-full mt-24 md:mt-56">
+    <div ref={ref1} className="bottom-0 w-full mt-24 md:mt-40">
       <motion.footer
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 50 }}
         transition={{ duration: 0.3 }}
-        className="flex flex-col items-center text-center text-white border-t mt-24 border-gray-500"
+        className="flex flex-col items-center text-center text-white border-t  border-gray-500"
       >
         <div className="container pt-9">
           <div className="mb-9 flex justify-center">
@@ -72,7 +72,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-full p-4 text-center text-neutral-800 dark:text-neutral-400">
+        <div className="w-full pt-4 text-center text-neutral-800 dark:text-neutral-400">
           <Link
             className="text-neutral-800 dark:text-neutral-400 ml-2 hover:text-white duration-300"
             to={"/sozlesme"}
@@ -80,7 +80,7 @@ const Footer = () => {
             Gizlilik Sözleşmesi
           </Link>
         </div>
-        <div className="w-full p-4 text-center text-neutral-800  dark:text-neutral-400">
+        <div className="w-full pt-8 pb-4 text-center text-neutral-800  dark:text-neutral-400">
           © 2024
           <a
             target="_blank"
