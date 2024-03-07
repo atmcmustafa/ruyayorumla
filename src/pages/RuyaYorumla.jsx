@@ -69,7 +69,7 @@ const RuyaYorumla = () => {
       <Helmet>
         <title>Rüyayı Yorumla</title>
       </Helmet>
-      <div className="px-6 md:px-0">
+      <div className="px-6 md:px-0 ">
         <div className="bg-stars relative ">
           <div className="absolute h-full w-full bg-black/60"></div>
         </div>
@@ -82,21 +82,21 @@ const RuyaYorumla = () => {
           <motion.h2
             variants={item}
             transition={{ delay: 0.2 }}
-            className="text-2xl  mb-2"
+            className="text-xl md:text-2xl  mb-2"
           >
             Rüya Yorumlama Aracına Hoşgeldin!
           </motion.h2>
           <motion.p
             variants={item}
             transition={{ delay: 0.3 }}
-            className="text-lg text-gray-400 mb-2 "
+            className="text-sm md:text-lg text-gray-400 mb-2 "
           >
             Gördüğün rüyayı hatırladığın kadarıyla anlat, yorumlayalım.
           </motion.p>
           <motion.p
             variants={item}
             transition={{ delay: 0.35 }}
-            className=" mb-2 flex items-center gap-2 bg-yellow-500 text-sm text-black w-fit p-1 rounded "
+            className=" mb-2 flex items-center gap-2 bg-yellow-500 text-xs md:text-sm text-black w-fit p-1 rounded "
           >
             <FaInfoCircle />
             Kullanılan servisten dolayı cevap süreleri uzun sürebilmektedir.

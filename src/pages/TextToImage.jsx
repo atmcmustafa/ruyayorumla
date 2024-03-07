@@ -66,7 +66,7 @@ const TextToImage = () => {
       <Helmet>
         <title>Rüyayı Resime Dönüştür</title>
       </Helmet>
-      <div className="px-6 md:px-0">
+      <div className="px-6 md:px-0 ">
         <div className="bg-sunlight relative ">
           <div className="absolute h-full w-full bg-black/60"></div>
         </div>
@@ -74,26 +74,26 @@ const TextToImage = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="container mx-auto"
+          className="container mx-auto "
         >
           <motion.h2
             variants={item}
             transition={{ delay: 0.2 }}
-            className="text-2xl  mb-2"
+            className="text-xl md:text-2xl  mb-2"
           >
             Rüyaya Göre Resim Oluşturma Aracına Hoşgeldin!
           </motion.h2>
           <motion.p
             variants={item}
             transition={{ delay: 0.3 }}
-            className="text-lg text-gray-400 mb-2 "
+            className="text-sm md:text-lg text-gray-400 mb-2 "
           >
             Gördüğün rüyayı hatırladığın kadarıyla anlat, resimleyelim.
           </motion.p>
           <motion.p
             variants={item}
             transition={{ delay: 0.35 }}
-            className=" mb-2 flex items-center gap-2 bg-yellow-500 text-sm text-black w-fit p-1 rounded "
+            className=" mb-2 flex items-center gap-2 bg-yellow-500 text-xs md:text-sm text-black w-fit p-1 rounded "
           >
             <FaInfoCircle />
             Kullanılan servisten dolayı cevap süreleri uzun sürebilmektedir.
