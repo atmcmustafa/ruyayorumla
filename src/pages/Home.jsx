@@ -35,7 +35,7 @@ const Home = () => {
         <title>Ana Sayfa</title>
       </Helmet>
       <div className="px-6 md:px-0">
-        <div className="h-[650px] lg:h-[840px] relative">
+        <div className="h-[550px] lg:h-[840px] relative">
           <div className="absolute h-full w-full bg-black/60"></div>
           <motion.div
             variants={container}
@@ -64,7 +64,7 @@ const Home = () => {
             <motion.div
               variants={item}
               transition={{ delay: 0.3 }}
-              className="flex mx-auto flex-col sm:flex-row gap-8 mt-6"
+              className="flex mx-auto flex-col sm:flex-row gap-3 md:gap-8 mt-6"
             >
               <motion.div variants={item} transition={{ delay: 0.4 }}>
                 <Button

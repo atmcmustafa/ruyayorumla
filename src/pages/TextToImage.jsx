@@ -121,7 +121,7 @@ const TextToImage = () => {
                 transition={{ delay: 0.5 }}
                 type="submit"
                 className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E80]/80 pointer-events-none "
+             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E6D]/80 pointer-events-none "
               >
                 <span className="btn-loader"></span>
                 <span>Oluşturuluyor</span>
@@ -132,7 +132,7 @@ const TextToImage = () => {
                 transition={{ delay: 0.5 }}
                 type="submit"
                 className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex items-center justify-center mt-6 "
+             md:w-36 bg-[#224E6D] hover:bg-[#224E6D]/70 duration-300 font-semibold rounded text-white flex items-center justify-center mt-6 "
               >
                 Gönder
               </motion.button>

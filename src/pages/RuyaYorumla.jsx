@@ -78,7 +78,7 @@ const RuyaYorumla = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="container mx-auto"
+          className="container mx-auto "
         >
           <motion.h2
             variants={item}
@@ -124,7 +124,7 @@ const RuyaYorumla = () => {
                 transition={{ delay: 0.5 }}
                 type="submit"
                 className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E80]/80 pointer-events-none "
+             md:w-36 bg-[#4A266A]  font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#4A266A]/80 pointer-events-none "
               >
                 <span className="btn-loader"></span>
                 <span>Yorumlanıyor</span>
@@ -135,7 +135,8 @@ const RuyaYorumla = () => {
                 transition={{ delay: 0.5 }}
                 type="submit"
                 className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex items-center justify-center mt-6 "
+               
+             md:w-36 bg-[#4A266A] duration-300 hover:bg-[#4A266A]/70 font-semibold rounded text-white flex items-center justify-center mt-6 "
               >
                 Gönder
               </motion.button>

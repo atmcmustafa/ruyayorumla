@@ -62,7 +62,13 @@ const Header = () => {
       >
         <nav className="flex flex-col items-center gap-8  mt-24 ">
           <Link to={"/"} className="text-3xl" onClick={() => setToggle(false)}>
-            <img src={logo} width={60} height={60} className="rounded-full" />
+            <img
+              alt="Logo"
+              src={logo}
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
           </Link>
           <Button
             onClick={() => setToggle(false)}
