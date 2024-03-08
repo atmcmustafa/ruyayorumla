@@ -157,6 +157,7 @@ const Home = () => {
               <img
                 alt="Rüya Görseli"
                 src={ruya1}
+                loading="lazy"
                 className="h-96 object-cover w-full flex-1 rounded"
               />
             </motion.div>
@@ -205,6 +206,7 @@ const Home = () => {
               <img
                 alt="Rüya Görselleştirme"
                 src={ruyaGorsellestirme}
+                loading="lazy"
                 className="h-96 object-cover w-full flex-1 rounded"
               />
             </motion.div>

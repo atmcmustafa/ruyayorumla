@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 
 body {
@@ -35,7 +32,6 @@ p,span {
 
 }
 .bg-sunlight{
-
     background-image: url("https://images.unsplash.com/photo-1615232934320-87b37b0ff5ab?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     position: absolute;
     background-repeat: no-repeat;
@@ -60,24 +56,6 @@ input[type="file"] {
     padding: 6px 12px;
     cursor: pointer;
 }
-
-
-
-.loader {
-    width: 50px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: #514b82;
-    -webkit-mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
-    transform-origin: 50% 40%;
-    animation: l25 1s infinite linear;
-  }
-  @keyframes l25 {
-    100% {transform: rotate(1turn)}
-  }
-
-
-
 
   /* scrollbar styles */
   /* width */

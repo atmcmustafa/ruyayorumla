@@ -83,7 +83,7 @@ const RuyaYorumla = () => {
           <motion.h2
             variants={item}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl  mb-2"
+            className="text-xl md:text-2xl mb-2"
           >
             Rüya Yorumlama Aracına Hoşgeldin!
           </motion.h2>
