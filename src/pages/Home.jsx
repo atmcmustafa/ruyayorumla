@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 import ruyaGorsellestirme from "/ruya-gorsellestirme.webp";
 import ruya1 from "/ruya-1.webp";
+import heroBg from "/hero-bg.jpg";
 import { useInView } from "react-intersection-observer";
 import { Helmet } from "react-helmet";
 
@@ -85,7 +86,7 @@ const Home = () => {
             </motion.div>
           </motion.div>
           <img
-            src="https://images.unsplash.com/photo-1707581786096-2f89a6b9a63d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={heroBg}
             alt="hero_background"
             className="w-full h-full object-cover md:object-fill"
           />
