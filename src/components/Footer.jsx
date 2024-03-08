@@ -72,20 +72,20 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-full pt-4 text-center text-neutral-800 dark:text-neutral-400">
+        <div className="w-full pt-4 text-center text-neutral-800 dark:text-neutral-300">
           <Link
-            className="text-neutral-800 dark:text-neutral-400 ml-2 hover:text-white duration-300"
+            className=" ml-2 hover:text-white duration-300"
             to={"/sozlesme"}
           >
             Gizlilik Sözleşmesi
           </Link>
         </div>
-        <div className="w-full pt-8 pb-4 text-center text-neutral-800  dark:text-neutral-400">
+        <div className="w-full pt-8 pb-4 text-center text-neutral-800 dark:text-neutral-300">
           © 2024
           <a
             target="_blank"
             href="https://atmcmustafa.vercel.app/"
-            className="text-neutral-800 dark:text-neutral-400 ml-2 hover:text-white duration-300"
+            className="ml-2 hover:text-white duration-300"
           >
             Mustafa Atmaca
           </a>

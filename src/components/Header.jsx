@@ -10,9 +10,15 @@ const Header = () => {
   console.log(toggle);
   return (
     <header className="px-6 md:px-0 flex justify-between items-center relative">
-      <div className="flex items-center py-6 container mx-auto justify-between ">
-        <Link to={"/"} className="text-3xl">
-          <img src={logo} width={70} height={70} className="rounded-full" />
+      <div className="flex items-center py-6 container mx-auto justify-between">
+        <Link to={"/"}>
+          <img
+            alt="Logo"
+            src={logo}
+            width={60}
+            height={60}
+            className="rounded-full"
+          />
         </Link>
         <nav className=" items-center gap-8 md:flex hidden">
           <Button
@@ -56,7 +62,7 @@ const Header = () => {
       >
         <nav className="flex flex-col items-center gap-8  mt-24 ">
           <Link to={"/"} className="text-3xl" onClick={() => setToggle(false)}>
-            <img src={logo} width={70} height={70} className="rounded-full" />
+            <img src={logo} width={60} height={60} className="rounded-full" />
           </Link>
           <Button
             onClick={() => setToggle(false)}
@@ -82,14 +88,16 @@ const Header = () => {
           </Button>
         </nav>
         <div>
-          <div className="w-full p-4 text-center text-neutral-700 text-neutral-800 dark:text-neutral-400">
-            <a className="text-neutral-800 dark:text-neutral-400 ml-2" href="">
-              <Link onClick={() => setToggle(false)} to={"/sozlesme"}>
-                Gizlilik Sözleşmesi
-              </Link>
-            </a>
+          <div className="w-full p-4 text-center text-neutral-800 dark:text-neutral-400">
+            <Link
+              className="text-neutral-800 dark:text-neutral-400 ml-2"
+              onClick={() => setToggle(false)}
+              to={"/sozlesme"}
+            >
+              Gizlilik Sözleşmesi
+            </Link>
           </div>
-          <div className="w-full p-4 text-center  bottom-0 left-0 text-neutral-700 text-neutral-800 dark:text-neutral-400">
+          <div className="w-full p-4 text-center  bottom-0 left-0 text-neutral-800 dark:text-neutral-400">
             © 2024
             <a
               className="text-neutral-800 dark:text-neutral-400 ml-2"

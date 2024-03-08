@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { FaInfoCircle } from "react-icons/fa";
+import Backdrop from "../components/Backdrop";
 const TextToImage = () => {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -68,7 +69,7 @@ const TextToImage = () => {
       </Helmet>
       <div className="px-6 md:px-0 ">
         <div className="bg-sunlight relative ">
-          <div className="absolute h-full w-full bg-black/60"></div>
+          <Backdrop />
         </div>
         <motion.div
           variants={container}

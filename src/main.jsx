@@ -19,9 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Header />
     <Routes>
       <Route element={<Home />} path="/" />
-      <Route element={<Fal />} path="/falbak" />
       <Route element={<RuyaYorumla />} path="/ruyayorumla" />
-      <Route element={<App />} path="/resim" />
       <Route element={<TextToImage />} path="/generateImage" />
       <Route element={<Contact />} path="/iletisim" />
       <Route element={<Sozlesme />} path="/sozlesme" />
