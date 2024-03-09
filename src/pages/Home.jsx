@@ -5,7 +5,7 @@ import ruya1 from "/ruya-1.webp";
 import heroBg from "/hero-bg.jpg";
 import { useInView } from "react-intersection-observer";
 import { Helmet } from "react-helmet";
-
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const Home = () => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -211,6 +211,7 @@ const Home = () => {
                 className="h-96 object-cover w-full flex-1 rounded"
               />
             </motion.div>
+            <SpeedInsights />
           </div>
         </div>
       </div>
