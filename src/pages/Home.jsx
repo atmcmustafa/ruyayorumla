@@ -6,6 +6,7 @@ import heroBg from "/hero-bg.jpg";
 import { useInView } from "react-intersection-observer";
 import { Helmet } from "react-helmet";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 const Home = () => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -212,6 +213,7 @@ const Home = () => {
               />
             </motion.div>
             <SpeedInsights />
+            <Analytics />
           </div>
         </div>
       </div>
