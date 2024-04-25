@@ -16,7 +16,7 @@ const RuyaYorumla = () => {
     setErrorMessage("");
     try {
       const res = await fetch(
-        "https://server-latest2.onrender.com/api/interpret-dream",
+        "https://server-latest2.vercel.app/api/interpret-dream",
         {
           method: "POST",
           headers: {
