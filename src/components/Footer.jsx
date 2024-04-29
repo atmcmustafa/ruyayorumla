@@ -13,7 +13,7 @@ const Footer = () => {
         animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 50 }}
         transition={{ duration: 0.3 }}
         ref={ref1}
-        className="border-t border-gray-500 flex justify-center items-center text-center flex-col mx-auto w-full text-neutral-800 dark:text-neutral-300 my-auto  py-6 mt-24 lg:mt-56"
+        className="border-t border-gray-500 flex justify-center items-center text-center flex-col mx-auto w-full text-neutral-800 dark:text-neutral-300 my-auto  py-6 md:mt-24 lg:mt-56"
       >
         <div className="flex justify-center gap-9 text-xl">
           <Link

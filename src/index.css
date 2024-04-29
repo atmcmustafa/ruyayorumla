@@ -14,9 +14,17 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
 }
 
+h1 {
+  @apply text-[32px] md:text-[40px] lg:text-[56px] font-bold leading-[120%]  md:max-w-3xl mx-auto text-center text-[#c9d3df]
+}
+
 p,span {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+}
+
+p {
+  @apply text-[#a2acbe] leading-[150%]  max-w-3xl text-[28px]  
 }
 
 .bg-stars {
@@ -114,4 +122,118 @@ input[type="file"] {
 /* instagram logo color */
 .instagram-gradient:hover{
   background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+
+.gradient {
+  background: linear-gradient(180deg, rgba(66, 40, 102, .6) -15.9%, rgba(30, 31, 72, .355) 40.82%, rgba(52, 19, 121, 0) 122.75%);
+    display: inline-block;
+    filter: blur(128px);
+    height: 80%;
+    left: 50%;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    width: 80%;
+    
+}
+
+.gradient-blue {
+    background-image: linear-gradient(120deg, #e0c3fc 50%, #8ec5fc 100%);
+    display: inline-block;
+    filter: blur(128px);
+    left: 50%;
+    
+    overflow: hidden;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    width: 80%;
+    z-index: -99;
+}
+
+
+.gradient-blue-2 {
+  background-image: linear-gradient(to top, #30cfd0 50%, #330867 100%);
+  display: inline-block;
+  filter: blur(128px);
+  right: 50%;
+  overflow: hidden;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 80%;
+  z-index: -99;
+}
+
+
+.gradient-text {
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(0deg, #c59efa, #cc9efa 20%, #b6a4f5 40%, #8ea9f3 100%, #8ee7f3 0);
+  -webkit-background-clip: text;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+
+.gradient-text-blue {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+
+.gradient-purple-btn {
+  background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+}
+
+.gradient-purple-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.gradient-blue-btn {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+}
+
+.gradient-blue-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-bg {
+  align-items: center;
+  background: linear-gradient(122.32deg, #5c5cd6 -2.79%, #6952e0 86.74%);
+  border-color: #8f98fa #7f8afa #6b77f9;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 2px 16px #00000026;
+  cursor: pointer;
+  display: flex;
+  padding: 16px 24px;
+  transition: all .12s ease-in-out;
 }

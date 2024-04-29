@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import logo from "/logo.webp";
+import logo from "/interpret.png";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
@@ -9,19 +9,32 @@ const Header = () => {
 
   console.log(toggle);
   return (
-    <header className="px-6 md:px-0 flex justify-between items-center relative">
-      <div className="flex items-center py-6 container mx-auto justify-between">
+    <header className="px-6 md:px-0 flex justify-between items-center relative h-[60px] border-b border-[#262230] backdrop-filter">
+      <div className="flex items-center  container mx-auto justify-between">
         <Link to={"/"}>
           <img
             alt="Logo"
             src={logo}
-            width={60}
-            height={60}
+            width={144}
+            height={144}
             className="rounded-full"
           />
         </Link>
         <nav className=" items-center gap-8 md:flex hidden">
-          <Button
+          <Link
+            to={"/ruyayorumla"}
+            className="text-white text-lg opacity-80 hover:opacity-100 duration-300"
+          >
+            Yorumla
+          </Link>
+          <Link
+            to={"/generateImage"}
+            className="text-white text-lg opacity-80 hover:opacity-100 duration-300"
+          >
+            Resime Çevir
+          </Link>
+
+          {/* <Button
             color={"bg-[#4A266A] hover:bg-[#4A266A]/70"}
             to={"/ruyayorumla"}
           >
@@ -36,14 +49,14 @@ const Header = () => {
           </Button>
           <Button color={"border hover:bg-[#224E6D]"} to={"/iletisim"}>
             İletişim
-          </Button>
+          </Button> */}
         </nav>
       </div>
 
       <FaBars
         className="md:hidden cursor-pointer z-30"
         onClick={() => setToggle((prev) => !prev)}
-        size={36}
+        size={30}
       />
       {/* mobile menu */}
 

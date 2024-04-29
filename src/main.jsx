@@ -10,13 +10,15 @@ import Contact from "./pages/Contact.jsx";
 import Error from "./pages/Error.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Sozlesme from "./pages/Sozlesme.jsx";
+import NewHome from "./pages/NewHome.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ScrollToTop />
     <Header />
     <Routes>
-      <Route element={<Home />} path="/" />
+      {/* <Route element={<Home />} path="/" /> */}
+      <Route element={<NewHome />} path="/" />
       <Route element={<RuyaYorumla />} path="/ruyayorumla" />
       <Route element={<TextToImage />} path="/generateImage" />
       <Route element={<Contact />} path="/iletisim" />
