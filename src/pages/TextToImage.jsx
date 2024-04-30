@@ -14,7 +14,7 @@ const TextToImage = () => {
     setErrorMessage("");
     try {
       const response = await fetch(
-        "https://latest-image-generation.vercel.app/api/generate-image",
+        "https://server-imagegeneration.onrender.com/api/generate-image",
         {
           method: "POST",
           headers: {
