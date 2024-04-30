@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { FaInfoCircle } from "react-icons/fa";
-import Backdrop from "../components/Backdrop";
 const TextToImage = () => {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -68,14 +67,13 @@ const TextToImage = () => {
         <title>Rüyayı Resime Dönüştür</title>
       </Helmet>
       <div className="px-6 md:px-0 ">
-        <div className="bg-sunlight relative ">
-          <Backdrop />
-        </div>
+        <div className="gradient-blue-bg -z-10 "></div>
+
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="container mx-auto "
+          className="container mx-auto my-10"
         >
           <motion.h2
             variants={item}
@@ -108,11 +106,9 @@ const TextToImage = () => {
               onChange={(e) => setPrompt(e.target.value)}
               value={prompt}
               placeholder="Bir şeyler yazın..."
-              name=""
-              id=""
               cols="30"
               rows="10"
-              className="w-full bg-slate-900 outline-none p-4 rounded resize-none"
+              className="w-full gradient-border-blue  bg-transparent outline-none p-4 mt-2 rounded resize-none"
             ></textarea>
             {loading ? (
               <motion.button
@@ -120,8 +116,7 @@ const TextToImage = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="h-10 w-full
-             md:w-36 bg-[#224E6D] font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#224E6D]/80 pointer-events-none "
+                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4"
               >
                 <span className="btn-loader"></span>
                 <span>Oluşturuluyor</span>
@@ -131,8 +126,7 @@ const TextToImage = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="h-10 w-full
-             md:w-36 bg-[#224E6D] hover:bg-[#224E6D]/70 duration-300 font-semibold rounded text-white flex items-center justify-center mt-6 "
+                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0"
               >
                 Gönder
               </motion.button>

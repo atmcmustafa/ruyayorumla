@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@ body {
 
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Lora", serif;
+  font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: bold;
 }
@@ -137,26 +139,13 @@ input[type="file"] {
     transform: translate(-50%, -50%);
     vertical-align: middle;
     width: 80%;
-    
-}
-
-.gradient-blue {
-    background-image: linear-gradient(120deg, #e0c3fc 50%, #8ec5fc 100%);
-    display: inline-block;
-    filter: blur(128px);
-    left: 50%;
-    
-    overflow: hidden;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    vertical-align: middle;
-    width: 80%;
     z-index: -99;
 }
 
+.gradient-indigo {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 
-.gradient-blue-2 {
-  background-image: linear-gradient(to top, #30cfd0 50%, #330867 100%);
   display: inline-block;
   filter: blur(128px);
   right: 50%;
@@ -166,6 +155,57 @@ input[type="file"] {
   vertical-align: middle;
   width: 80%;
   z-index: -99;
+}
+
+.gradient-border-purple {
+  border:1px solid #c59efa ;
+
+}
+
+.gradient-border-blue {
+  border:1px solid #8ec5fc ;
+}
+
+.gradient-blue {
+    background-image: linear-gradient(120deg, #e0c3fc 50%, #8ec5fc 100%);
+    display: inline-block;
+    filter: blur(128px);
+    left: 50%;
+    overflow: hidden;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    width: 80%;
+    z-index: -99;
+}
+
+.gradient-blue-bg {
+  background: linear-gradient(180deg, rgba(22, 17, 88, 0.6) -15.9%, rgba(34, 35, 128, 0.355) 40.82%, rgba(16, 62, 163, 0) 122.75%);
+  display: inline-block;
+  filter: blur(128px);
+  height: 80%;
+  left: 50%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
+  width: 80%;
+  z-index: -99;
+}
+
+
+.gradient-blue-2 {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  display: inline-block;
+  filter: blur(128px);
+  height: 80%;
+  left: 20px;
+  overflow: hidden;
+  top: 0%;
+  vertical-align: middle;
+  width: 80%;
 }
 
 

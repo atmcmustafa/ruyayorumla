@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { FaInfoCircle } from "react-icons/fa";
-import Backdrop from "../components/Backdrop";
 
 const RuyaYorumla = () => {
   const [input, setInput] = useState("");
@@ -71,14 +70,12 @@ const RuyaYorumla = () => {
         <title>Rüyayı Yorumla</title>
       </Helmet>
       <div className="px-6 md:px-0 ">
-        <div className="bg-stars relative ">
-          <Backdrop />
-        </div>
+        <div className="gradient -z-10"></div>
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="container mx-auto "
+          className="container mx-auto my-8"
         >
           <motion.h2
             variants={item}
@@ -115,7 +112,7 @@ const RuyaYorumla = () => {
               id=""
               cols="30"
               rows="10"
-              className="w-full bg-slate-900 outline-none p-4 rounded resize-none"
+              className="w-full bg-transparent gradient-border-purple outline-none p-4 mt-2 rounded resize-none"
             ></textarea>
             {loading ? (
               <motion.button
@@ -123,8 +120,7 @@ const RuyaYorumla = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="h-10 w-full
-             md:w-36 bg-[#4A266A]  font-semibold rounded text-white flex gap-3 items-center justify-center mt-6 disabled:bg-[#4A266A]/80 pointer-events-none "
+                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4"
               >
                 <span className="btn-loader"></span>
                 <span>Yorumlanıyor</span>
@@ -134,9 +130,7 @@ const RuyaYorumla = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="h-10 w-full
-               
-             md:w-36 bg-[#4A266A] duration-300 hover:bg-[#4A266A]/70 font-semibold rounded text-white flex items-center justify-center mt-6 "
+                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0"
               >
                 Gönder
               </motion.button>
