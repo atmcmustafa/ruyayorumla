@@ -120,7 +120,7 @@ const RuyaYorumla = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4"
+                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
               >
                 <span className="btn-loader"></span>
                 <span>Yorumlanıyor</span>
@@ -130,7 +130,7 @@ const RuyaYorumla = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0"
+                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0 w-full md:w-auto justify-center"
               >
                 Gönder
               </motion.button>
@@ -142,7 +142,7 @@ const RuyaYorumla = () => {
               <h2 className="text-2xl  mb-2 mt-8">
                 İşte rüyanın anlamı burada!
               </h2>
-              <div className="bg-slate-900 p-4 mt-2 rounded">{response}</div>
+              <div className="bg-slate-900 p-4 mt-2 rounded ">{response}</div>
             </>
           )}
 

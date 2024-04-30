@@ -200,12 +200,13 @@ input[type="file"] {
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   display: inline-block;
   filter: blur(128px);
-  height: 80%;
-  left: 20px;
+  height: 20%;
+  left: 0px;
   overflow: hidden;
-  top: 0%;
+  top: 70%;
   vertical-align: middle;
   width: 80%;
+  z-index: -99;
 }
 
 

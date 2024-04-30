@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CardSection from "../components/CardSection";
 import { motion } from "framer-motion";
 const NewHome = () => {
@@ -49,15 +50,16 @@ const NewHome = () => {
             Rüyalarınızın gizemini çözün; bilinçaltınızın derinliklerine inin ve
             gerçek potansiyelinizi keşfetmek için bizimle yolculuğa çık.
           </motion.p>
-          <motion.button
-            variants={item}
-            transition={{ delay: 0.3 }}
-            className="flex items-center justify-center mt-[2.5em] mx-auto button-bg font-bold hover:opacity-70 duration-300 z-50"
-          >
-            <a href="/ruyayorumla" className="h-full w-full">
+
+          <Link to={"/ruyayorumla"}>
+            <motion.button
+              variants={item}
+              transition={{ delay: 0.3 }}
+              className="flex items-center justify-center mt-[2.5em] mx-auto button-bg font-bold hover:opacity-70 duration-300 z-50"
+            >
               Hemen Başla
-            </a>
-          </motion.button>
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
       <div className=" gradient-blue rounded-full h-24 !w-96"></div>
@@ -79,7 +81,6 @@ const NewHome = () => {
       />
 
       <div className=" gradient-indigo rounded-full h-24 !w-96 "></div>
-
       <div className="relative">
         <CardSection
           flexDirection={"md:flex-row-reverse"}
@@ -96,7 +97,7 @@ const NewHome = () => {
           }
           gradientBottom={"gradient-blue-bg"}
         />
-        <div className=" gradient-blue-2 rounded-full !h-24 !w-96 !absolute !left-0 !top-96 "></div>
+        <div className=" gradient-blue-2 rounded-full h-24 !w-96 absolute md:!top-72"></div>
       </div>
     </div>
   );

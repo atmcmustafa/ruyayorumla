@@ -14,7 +14,7 @@ const TextToImage = () => {
     setErrorMessage("");
     try {
       const response = await fetch(
-        "https://server-imagegeneration.onrender.com/api/generate-image",
+        "https://latest-image-generation.vercel.app/api/generate-image",
         {
           method: "POST",
           headers: {
@@ -116,7 +116,7 @@ const TextToImage = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4"
+                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
               >
                 <span className="btn-loader"></span>
                 <span>Oluşturuluyor</span>
@@ -126,7 +126,7 @@ const TextToImage = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0"
+                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0 w-full md:w-auto justify-center"
               >
                 Gönder
               </motion.button>
@@ -140,7 +140,7 @@ const TextToImage = () => {
               </h2>
 
               <img
-                className="w-full  h-full"
+                className="w-full  h-full max-h-96 md:max-h-[600px] object-cover rounded-xl"
                 src={imageUrl}
                 alt="Oluşturulan Resim"
               />

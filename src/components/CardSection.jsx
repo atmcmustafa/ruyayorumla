@@ -27,11 +27,14 @@ const CardSection = ({
         <p className="mt-3 text-[#a2acbe] leading-[150%]    text-xl lg:text-[22px]   tracking-wide text-center md:text-start">
           {text}
         </p>
-        <button className={`${buttonColor} mt-6 tracking-wide mx-auto md:mx-0`}>
-          <Link to={URL} className="h-full w-full block ">
+
+        <Link to={URL} className="h-full w-full block ">
+          <button
+            className={`${buttonColor} mt-6 tracking-wide mx-auto md:mx-0`}
+          >
             Hemen Öğren
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="h-72 md:h-auto max-h-72 md:max-h-96 w-full md:w-1/2  flex justify-start md:justify-end relative">
         <img

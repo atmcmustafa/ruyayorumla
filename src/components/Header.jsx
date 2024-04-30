@@ -33,23 +33,6 @@ const Header = () => {
           >
             Resime Çevir
           </Link>
-
-          {/* <Button
-            color={"bg-[#4A266A] hover:bg-[#4A266A]/70"}
-            to={"/ruyayorumla"}
-          >
-            Rüya Yorumla
-          </Button>
-
-          <Button
-            color={"bg-[#224E6D] hover:bg-[#224E6D]/70"}
-            to={"/generateImage"}
-          >
-            Rüyayı Resme Çevir
-          </Button>
-          <Button color={"border hover:bg-[#224E6D]"} to={"/iletisim"}>
-            İletişim
-          </Button> */}
         </nav>
       </div>
 
@@ -74,33 +57,39 @@ const Header = () => {
          ${toggle ? " left-0 " : " -left-[999px] "}`}
       >
         <nav className="flex flex-col items-center gap-8  mt-24 ">
-          <Link to={"/"} className="text-3xl" onClick={() => setToggle(false)}>
+          <Link to={"/"} className="" onClick={() => setToggle(false)}>
             <img
               alt="Logo"
               src={logo}
-              width={60}
-              height={60}
+              width={144}
+              height={144}
               className="rounded-full"
             />
           </Link>
-          <Button
-            onClick={() => setToggle(false)}
-            color={"bg-[#4A266A] hover:bg-[#4A266A]/70"}
-            to={"/ruyayorumla"}
-          >
-            Rüya Yorumla
-          </Button>
+
+          <Link to={"/ruyayorumla"}>
+            <button
+              onClick={() => setToggle(false)}
+              className={`gradient-purple-btn w-48 max-w-48 w-full mt-6 tracking-wide mx-auto md:mx-0`}
+            >
+              Yorumla
+            </button>
+          </Link>
+
+          <Link to={"/generateImage"}>
+            <button
+              onClick={() => setToggle(false)}
+              className={`gradient-blue-btn max-w-48 w-full mt-6 tracking-wide mx-auto md:mx-0`}
+            >
+              Görselleştir
+            </button>
+          </Link>
 
           <Button
             onClick={() => setToggle(false)}
-            color={"bg-[#224E6D] hover:bg-[#224E6D]/70"}
-            to={"/generateImage"}
-          >
-            Rüyayı Resme Çevir
-          </Button>
-          <Button
-            onClick={() => setToggle(false)}
-            color={"border hover:bg-[#224E6D]"}
+            color={
+              "border hover:bg-[#224E6D] w-48 max-w-48 w-full h-[54px] mt-6"
+            }
             to={"/iletisim"}
           >
             İletişim
