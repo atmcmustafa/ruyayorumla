@@ -117,7 +117,7 @@ const TextToImage = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-blue-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
+                className="gradient-blue-btn mt-6 tracking-wide disabled:pointer-events-none disabled:bg-opacity-50 mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
               >
                 <span className="btn-loader"></span>
                 <span>Oluşturuluyor</span>

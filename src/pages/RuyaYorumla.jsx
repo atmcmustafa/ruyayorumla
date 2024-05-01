@@ -121,7 +121,7 @@ const RuyaYorumla = () => {
                 variants={item}
                 transition={{ delay: 0.5 }}
                 type="submit"
-                className="gradient-purple-btn mt-6 tracking-wide mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
+                className="gradient-purple-btn mt-6 disabled:pointer-events-none disabled:opacity-50 tracking-wide mx-auto md:mx-0 !flex gap-4 w-full md:w-auto justify-center"
               >
                 <span className="btn-loader"></span>
                 <span>Yorumlanıyor</span>
