@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CardSection from "../components/CardSection";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 const NewHome = () => {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -99,6 +100,7 @@ const NewHome = () => {
         />
         <div className=" gradient-blue-2 rounded-full h-24 !w-96 absolute md:!top-72"></div>
       </div>
+      <Analytics />
     </div>
   );
 };

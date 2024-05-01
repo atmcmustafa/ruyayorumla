@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { FaInfoCircle } from "react-icons/fa";
+import { Analytics } from "@vercel/analytics/react";
 
 const RuyaYorumla = () => {
   const [input, setInput] = useState("");
@@ -152,6 +153,7 @@ const RuyaYorumla = () => {
             </div>
           )}
         </motion.div>
+        <Analytics />
       </div>
     </>
   );

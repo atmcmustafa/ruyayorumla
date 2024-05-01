@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { FaInfoCircle } from "react-icons/fa";
+import { Analytics } from "@vercel/analytics/react";
 const TextToImage = () => {
   const [prompt, setPrompt] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -152,6 +153,7 @@ const TextToImage = () => {
             </div>
           )}
         </motion.div>
+        <Analytics />
       </div>
     </>
   );
